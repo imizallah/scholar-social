@@ -2,8 +2,10 @@
 
 <main class="mt-5 form-main">
   <div class="container mt-5">
+    
     <form class="mt-5" method="POST" action="/register">
       <div class="row">
+        <%- include('../partials/messages/message') -%>
         <div class="form-group col-md-6">
           <label for="username">Username:</label>
           <input name="username" type="text" class="form-control" placeholder="Enter username" id="username" required>
@@ -21,8 +23,9 @@
           <input name="confirmPassword" type="password" class="form-control" placeholder="Enter password again" id="conpwd" required>
         </div>
         
+        
         <button type="submit" class="btn btn-primary btn-lg mb-2 d-block">Register</button><br>
-        <div class="form-group form-check">
+        <div class="form-group form-check d-block">
           <label class="form-check-label">
             Already have an account? <a href="/login">Login</a> 
           </label>
